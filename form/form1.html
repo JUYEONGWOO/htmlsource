@@ -7,7 +7,13 @@
   </head>
   <body>
     <!-- form : 웹서버에 정보를 제출하기 위한 용도-->
-    <form action="" method="" name="" novalidate autocomplete="">
+    <form
+      action="../link/link1.html"
+      method=""
+      name=""
+      novalidate
+      autocomplete=""
+    >
       <!--action : 전송한 정보를 처리할 웹페이지의 url
             method : 서버로 전송할 http 방식(get(기본값),post)
             name : 폼의 이름 지정
@@ -15,10 +21,15 @@
             autocomplete : 자동완성(on(기본), off)
         -->
       <div>
-        <label for="username">이름</label> <input type="text" id="username" />
+        <input />
+      </div>
+      <div>
+        <label for="username">이름</label>
+        <input type="text" id="username" name="USERNAME" />
       </div>
       <div>
         <label for="password">비밀번호</label>
+
         <input type="password" name="" id="password" />
       </div>
       <div>
@@ -31,11 +42,29 @@
         <label for="">취미</label>
         <!-- checkbox : 여러 개의 선택지를 주고 여러개 선택하기-->
         <input type="checkbox" name="hobby" id="" />영화감상
-        <input type="checkbox" name="hobby" id="" />독서
+        <input type="checkbox" name="hobby" id="" checked />독서
         <input type="checkbox" name="hobby" id="" />운동
         <input type="checkbox" name="hobby" id="" />잠자기
       </div>
-      <input type="button" value="보내기" />
+      <div>
+        <textarea name="" id="" cols="30" rows="10">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim atque nobis, blanditiis, consectetur ullam, illum provident esse aspernatur sequi consequatur tempora itaque odit doloribus quo! Maiores, recusandae quidem! Nulla.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, natus quod? Vitae modi est autem perspiciatis. Nostrum esse eos animi hic amet perspiciatis. Voluptate fuga molestias molestiae nostrum alias, consectetur, optio ex et mollitia aliquam iusto qui sed, voluptates eos perferendis! Unde quam eos aut repellendus sit. Quidem perspiciatis natus delectus pariatur repellendus praesentium consequuntur tempore voluptatum, at quis iste similique dolore dolorum fugiat porro quam sunt expedita incidunt, necessitatibus consectetur! Tempore laudantium officia quam exercitationem cumque voluptatum dicta ea illo voluptate atque, quibusdam totam minus inventore repudiandae eius a commodi! Amet in error perspiciatis omnis quasi quae hic deleniti.
+          보이는거에여
+
+        </textarea>
+      </div>
+      <div>
+        <select name="" id="">
+          <option value="bmw">BMW</option>
+          <option value="benz" selected>Benz</option>
+          <option value="hyundai">현대자동차</option>
+          <option value="kia">기아자동차</option>
+        </select>
+      </div>
+      <input type="button" value="일반버튼" />
+      <input type="submit" value="submit" />
+      <input type="reset" value="reset" />
     </form>
   </body>
 </html>
